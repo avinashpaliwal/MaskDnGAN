@@ -4,7 +4,7 @@ Official PyTorch implementation of "Multi-Stage Raw Video Denoising with Adversa
 #### Code will be released soon!   
 
 ### Video
-[![Audi R8](misc/video_shot.jpg)](https://www.youtube.com/watch?v=43HH3YN8U10)
+[![Audi R8](misc/video_shot.jpg)](https://www.youtube.com/watch?v=wY64fCseXZI)
 
 ## References
 ```
