@@ -1,6 +1,13 @@
 # MaskDnGAN [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
 Official PyTorch implementation of "Multi-Stage Raw Video Denoising with Adversarial Loss and Gradient Mask" [Project](https://people.engr.tamu.edu/nimak/Papers/ICCP2021_denoising) | [Paper](https://arxiv.org/abs/2103.02861)  
 
+## Results
+### Synthetic
+<img src='./misc/inset.gif'>
+
+### Real
+<img src='./misc/inset_real.gif'>
+
 ## Prerequisites
 This codebase was developed and tested on Ubuntu with PyTorch 1.3.1 and CUDA 10.1, Python 3.7.10 and Scipy 1.1.0. To install [PyTorch](https://pytorch.org/get-started/previous-versions/):
 
@@ -29,10 +36,8 @@ and then go to [https://localhost:6007](https://localhost:6007).
 ## Evaluation
 #### Evaluation code along with synthetic test set to be added soon!
 
-[Audi R8](misc/inset.gif)
-
 ## Video
-[![Audi R8](misc/video_shot.jpg)](https://www.youtube.com/watch?v=wY64fCseXZI)
+[![Audi R8](misc/video_freeze.jpg)](https://www.youtube.com/watch?v=wY64fCseXZI)
 
 ## Citation
 ```
