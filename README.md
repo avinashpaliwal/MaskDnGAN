@@ -9,16 +9,16 @@ Official PyTorch implementation of "Multi-Stage Raw Video Denoising with Adversa
 <img src='./misc/inset_real.gif'>
 
 ## Prerequisites
-This codebase was developed and tested on Ubuntu with PyTorch 1.3.1 and CUDA 10.1, Python 3.7.10 and Scipy 1.1.0. To install [PyTorch](https://pytorch.org/get-started/previous-versions/):
+This codebase was developed and tested on Ubuntu with PyTorch 1.7.1 and CUDA 10.2, Python 3.8. To install [PyTorch](https://pytorch.org/get-started/previous-versions/):
 
 ```bash
-conda install pytorch==1.3.1 torchvision==0.4.2 cudatoolkit=10.1 -c pytorch
+conda install pytorch==1.7.1 torchvision==0.8.2 cudatoolkit=10.2 -c pytorch
 ```
 
 ## Training
 Set the dataset path and run:
 ```bash
-python train.py --dataset_root path/to/dataset
+python train.py --dir path/to/dataset
 ```
 Run the following commmand for help / more options like batch size, sequence length etc.
 ```bash
@@ -34,7 +34,24 @@ tensorboard --logdir logs --port 6007
 and then go to [https://localhost:6007](https://localhost:6007).
 
 ## Evaluation
-#### Evaluation code along with synthetic test set to be added soon!
+The evaluation scripts can be used to generate denoised videos on the [CRVD dataset](https://github.com/cao-cong/RViDeNet) and our [Synthetic Test Set](https://drive.google.com/drive/folders/12Vi7teAAtrduZr2baWlNOMi0odhmv3Ry?usp=sharing). You can also download our [CRVD results](https://drive.google.com/drive/folders/1cMtCgVJNRbFo5KyKGaFYSE2Dgc6N_0Tf?usp=sharing).   
+#### CRVD Dataset
+##### Indoor Scenes
+Set the dataset path and run:
+```bash
+python test_indoor.py
+```
+##### Outdoor Scenes
+Set the dataset path and run:
+```bash
+python test_outdoor.py
+```
+#### Synthetic Test Set
+Set the dataset path and run:
+```bash
+python test_synthetic.py
+```
+The synthetic test dataset was collected from YouTube channels [Video Library - No copyright Footage](https://www.youtube.com/c/VideoLibraryNocopyrightFootage), [Le Monde en Vidéo](https://www.youtube.com/c/LeMondeenVid%C3%A9o) and [Underway](https://www.youtube.com/channel/UCWw752oPl75UiszD07AxX-A), all under Creative Commons (CC) license.
 
 ## Video
 [![Audi R8](misc/video_freeze.jpg)](https://www.youtube.com/watch?v=wY64fCseXZI)
