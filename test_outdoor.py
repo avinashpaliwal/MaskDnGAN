@@ -78,7 +78,7 @@ denoiser.load_state_dict(dict1['state_dict'])
 trainBackWarp      = dataloader.backWarp((1920, 1152), device)
 trainBackWarp      = trainBackWarp.to(device)
 
-iso_list = [25600,12800,6400,3200,1600]
+iso_list = [12800,6400,3200,1600]
 
 for iso in iso_list:
     print('processing iso={}'.format(iso))
@@ -89,7 +89,7 @@ for iso in iso_list:
     for scene_id in range(1,10+1):
         frames = os.listdir('../CRVD/CRVD_data/outdoor_raw_noisy/outdoor_raw_noisy_scene{}/scene{}/iso{}'.format(scene_id, scene_id, iso))
 
-        prev = (None, None)
+        prev = [None]
 
         for index in tqdm(range(len(frames) - 4)):
             frame_list = []

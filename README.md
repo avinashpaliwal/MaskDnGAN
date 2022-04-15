@@ -1,6 +1,8 @@
 # MaskDnGAN [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
 Official PyTorch implementation of "Multi-Stage Raw Video Denoising with Adversarial Loss and Gradient Mask" [Project](https://people.engr.tamu.edu/nimak/Papers/ICCP2021_denoising) | [Paper](https://arxiv.org/abs/2103.02861)  
 
+<img src='./misc/teaser.png'>
+
 ## Results
 ### Synthetic
 <img src='./misc/inset.gif'>
